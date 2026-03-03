@@ -1,0 +1,1 @@
+lab.Add(lab.Add(lab.Num(0), lab.Var("y")), lab.Var("x"))

@@ -1,0 +1,1 @@
+lab.Sub(lab.Var("x"), lab.Mul(lab.Var("x"), lab.Var("x")))

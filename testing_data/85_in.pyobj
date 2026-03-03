@@ -1,0 +1,1 @@
+lab.Div(lab.Mul(lab.Var("x"), lab.Var("x")), lab.Var("y"))
