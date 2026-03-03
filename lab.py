@@ -77,36 +77,35 @@ class BinOp(Expr):
             self.right = Var(right)
         else:
             self.right = right
+    
+    def __repr__(self):
+        return f"{self.__class__.__name__}({repr(self.left)}, {repr(self.right)})"
 class Add(BinOp):
     """
     Represents Addition
     """
-    def __repr__(self):
-        return f'Add({self.left.__class__.__name__}({self.left.__str__()}), {self.right.__class__.__name__}({self.right.__str__()}))'
+    pass
 
 class Sub(BinOp):
     """
     Represents Subtraction
     """
-    def __repr__(self):
-        return f'{Sub(self.left.__repr__(), self.right.__repr__())}'
+    pass
 
 class Mul(BinOp):
     """
     Represents Multiplication
     """
-    def __repr__(self):
-        return f'{Mul(self.left.__repr__(), self.right.__repr__())}'
+    pass
 
 class Div(BinOp):
     """
     Represents Division
     """
-    def __repr__(self):
-        return f'{Div(self.left.__repr__(), self.right.__repr__())}'
+    pass
 
 
 if __name__ == "__main__":
-    a = Add(2, 'y')
-    print(repr(a))
+    z = Add(Var('x'), Sub(Var('y'), Num(2)))
+    print(repr(z))
 
